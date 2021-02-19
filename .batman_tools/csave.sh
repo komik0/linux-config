@@ -21,7 +21,7 @@ cr () {
 ch () {
 	local i f
 	i=`cat $HOME/.csr/locations | wc -l`
-	for f in `cat ~/.csr/locations`; do
+	for f in `cat $HOME/.csr/locations`; do
 		echo "[$i] $f [$i]";
 		i=$((i-1));
 	done
